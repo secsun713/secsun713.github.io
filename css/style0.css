@@ -1,0 +1,320 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	background-image:radial-gradient(#444, #111);
+}
+
+/*awal nav*/
+nav {
+	overflow: hidden;
+	width: 100%;
+	background: black;
+	position: fixed;
+	top: 0;
+	height: 60px;
+	display: flex;
+	justify-content: space-around;
+}
+
+nav .logo {
+	font-size: 1rem;
+	width: 30%;
+	left: -35px;
+	position: relative;
+	top: -18px;
+}
+
+nav .logo img {
+	padding-top: 20px;
+	width: 191px;
+}
+
+nav li {
+	display: inline;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+	font-family: sans-serif;
+	padding: 0px 10px;
+	transition: 0.15s;
+}
+
+nav a:hover{
+	color: blue;
+	background-color: white;
+}
+
+#nav-button {
+	display: none;
+}
+
+nav label {
+	display: none;
+}
+/*akhir nav*/
+
+
+.container {
+	color: white;
+	padding-top: 3rem;
+	font-family:'Fira Mono', monospace;
+	background-image:radial-gradient(#444, #111);
+}
+
+/*awal tentang*/
+.about {
+	padding: 1rem;  
+
+}
+
+.about .profilpic {
+	width: 300px;
+	height: 200px;
+	padding-right: 1rem;
+	padding-bottom: 2rem;
+	float: left;
+
+}
+
+
+.about .profilpic figcaption{
+	text-align: center;
+	border: 2px solid;
+	background-color: white;
+	color: red;
+
+}
+
+.about p a {
+	text-decoration: none;
+	color: red;
+}
+
+.about p a:hover {
+	color: red;
+	background-color: white;
+}
+/*akhir tentang*/
+
+
+/*awal pendidikan*/
+.academy {
+	padding: 1rem;
+}
+
+.academy .acadpic {
+	width: 180px;
+	height: 180px;
+	float: right;
+	margin-top: -4rem;
+}
+/*akhir pendidikan*/
+
+/*awal riwayat org*/
+.org {
+	padding: 1rem;
+}
+
+.org .orgpic {
+	width: 180px;
+	height: 180px;
+	float: right;
+	margin-top: -1rem;
+}
+
+
+/*akhir riwayat org*/
+
+
+/*awal riwayat exp*/
+.exp {
+	padding: 1rem;
+	padding-top: 3rem;
+}
+
+.exp .exppic {
+	width: 180px;
+	height: 180px;
+	float: right;
+	margin-top: -3rem;
+
+}
+
+
+/*akhir riwayat exp*/
+
+
+/*awal skill*/
+.skill {
+	padding: 1rem;
+	
+}
+
+
+/*akhir skill*/
+
+
+
+
+/*awal footer*/
+footer{
+    background: #111;
+    font-family:'Fira Mono', monospace;
+    color: #fff;
+}
+
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    color: #ff0000;
+    font-weight: 200;
+}
+
+.footer-bottom ul {
+	margin-left: -2.3rem;
+}
+
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socials li{
+    margin: 0.5rem;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    width: 20px;
+    height: 20px;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: #ff0000;
+}
+
+.socials a svg {
+	width: 25px;
+    height: 25px;
+}
+
+
+.socials a:hover svg{
+    color: #ff0000;
+}
+/*akhir footer*/
+
+
+
+
+
+/*layout responsive mobile*/
+
+@media only screen and (max-width: 736px) and (orientation: portrait) {
+
+	nav {
+		align-items: center;
+	}
+
+	nav .logo {
+		width: 30%;
+		position: absolute;
+		left: 0px;
+	}
+
+	nav .logo img {
+		padding-top: 20px;
+	}
+
+	nav ul {
+		position: fixed;
+		top: 44px;
+		width: 100%;
+		background: black;
+		max-height: 0;
+		overflow: hidden;
+
+	}
+
+	nav li {
+		display: block;
+		width: 100%;
+		padding: 5px;
+	}
+
+	nav a {
+		width: 100%;
+		display: block;
+	}
+
+	nav li:hover{
+		background: white;
+	}
+
+	nav label{
+		color: white;
+		display: block;
+		padding: 0px 10px;
+		font-size: 30px;
+		cursor: pointer;
+		position: absolute;
+		right: 2%;
+	}
+
+	nav label:hover {
+		color: blue;
+	}
+
+	nav #nav-button:checked~ul {
+		max-height: 100%;
+		transition: all 1s ease-out;
+	}
+
+	.container {
+		padding-top: 3rem;
+		font-family:monospace;
+
+	}
+
+	.about .profilpic {
+		float: none;
+	}
+
+	.academy .acadpic {
+	margin-top: 2rem;
+	float: none;
+	}
+
+	.org .orgpic {
+	margin-top: 2rem;
+	float: none;
+	}
+
+
+	.exp .exppic {
+	margin-top: 2rem;
+	float: none;
+	}	
+
+
+
+
+
+}
